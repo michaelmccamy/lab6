@@ -1,16 +1,28 @@
-# This is a sample Python script.
+def menu():
+    print("Menu\n1. Encode\n2. Decode\n3. Quit\n")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    program_run = True
+    while program_run is True:
+        user_input = int(input("Please enter an option: "))
+        if user_input == 1:
+            encode()
+        elif user_input == 2:
+            decode()
+        else:
+            program_run is False
+
+def encode():
+    encoded_password = ""
+    user_password = input("Please enter your password: ")
+    for char in user_password:
+        new_digit = int(char) + 3
+        if new_digit >= 10:
+            new_digit -= 10
+        else:
+            pass
+        encoded_password = encoded_password + str(new_digit)
+    return encoded_password
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
