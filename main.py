@@ -1,3 +1,4 @@
+#Michael McCamy and Connor White
 def menu():
     print("Menu\n1. Encode\n2. Decode\n3. Quit\n")
 
@@ -24,7 +25,7 @@ def encode():
         encoded_password = encoded_password + str(new_digit)
     return encoded_password
 
-#hwllo
+
 
 
 
